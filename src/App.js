@@ -1,7 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MarketPage from "./pages/MarketPage/MarketPage";
 
 function App() {
   return (
-    <div>test</div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="items" element={<MarketPage />}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
