@@ -5,7 +5,7 @@ import "./Header.css";
 
 function Header() {
 	return (
-		<header className="commonHeader">
+		<header className="globalHeader">
 			<div className="leftHeader">
 				<Link to="/" className="headerLogo" aria-label="홈이동">
 					<img src={Logo} alt="로고"/>
