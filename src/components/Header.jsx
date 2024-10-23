@@ -26,6 +26,10 @@ function Header() {
 					</ul>
 				</nav>
 			</div>
+			
+			<Link to="/login" className="loginLink btn">
+        로그인
+      </Link>
 		</header>
 	)
 }
