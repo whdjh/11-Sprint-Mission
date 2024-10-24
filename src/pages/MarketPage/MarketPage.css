@@ -1,0 +1,75 @@
+.itemCard {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.itemCardImg {
+	width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1; 
+  margin-bottom: 16px;
+}
+
+.itemInfo {
+	display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.itemName {
+	font-size: 16px;
+	font-weight: 400;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.itemPrice {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.itemFavoritCnt {
+	display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.bestItemsContainer {
+  padding: 80px 5px 24px 5px;
+}
+
+.bestItemsTitle {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: normal;
+}
+
+@media(min-width: 768px){
+	.bestItemsContainer {
+		padding: 60px 5px 24px 5px;
+    margin-bottom: 40px;
+  }
+
+	.bestItemsCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media(min-width: 1280px) {
+	.bestItemsContainer {
+		padding: 60px 10px 24px 10px;
+	}
+
+	.bestItemsCard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}

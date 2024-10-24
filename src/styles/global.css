@@ -9,7 +9,6 @@
 	--gray-100: #e8ebed;
 	--gray-50: #f7f7f8;
 	--blue: #3692ff;
-
 }
 
 /* reset */
@@ -46,7 +45,8 @@ button {
 }
 
 /* 텍스트 라인 가장 아래쪽으로 맞춤 */
-img {
+img,
+svg {
 	vertical-align: bottom;
 }
 
@@ -79,7 +79,7 @@ h1 {
 
 .wrapper {
 	width: 100%;
-  	padding: 0 16px;
+  padding: 0 16px;
 }
 
 /* footer */
@@ -118,7 +118,6 @@ footer {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 40;
 }
 
 /* 버튼 클릭시 색상 변경 시각화 */
@@ -139,16 +138,13 @@ footer {
 
 .watch-btn {
 	font-size: 16px;
-  	font-weight: 600;
-  	border-radius: 999px;
-  	padding: 14.5px 33.5px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 14.5px 33.5px;
 }
 
-/* 질문 : 로그인과 회원가입 페이지에서 버튼 정렬때문에 했는데 괜찮은지? */
-.watch-btn.full-width-btn {
-    display: block;
-    width: 100%;
-    margin: 24px auto; 
+.full-width-btn {
+  width: 100%;
 }
 
 /* Tablet(768px ~ 1199px) */

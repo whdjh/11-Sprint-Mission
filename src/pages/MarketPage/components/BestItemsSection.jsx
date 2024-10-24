@@ -34,10 +34,10 @@ function BestItemsSection() {
 	}, [pageSize]);
 
 	return (
-		<div>
-			<h1>베스트 상품</h1>
+		<div className="bestItemsContainer">
+			<h1 className="bestItemsTitle">베스트 상품</h1>
 
-			<div>
+			<div className="bestItemsCard">
 				{itemList?.map((item) => (
 					<ItemCard item={item} key={`best-item-${item.id}`} />
 				))}
